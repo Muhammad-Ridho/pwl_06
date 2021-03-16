@@ -1,10 +1,8 @@
-@extends('layouts.app')
 
-@section('content')
 <div class="card-body">
     @if (session('status'))
         <div class="alert alert-succes" role="alert">
-            {{session('status')}}
+            {{ session('status') }}
         </div>
     @endif
 
@@ -17,4 +15,4 @@
         <tr><th>Create At</th><th>:</th><td>{{ $user->created_at }}</td></tr>
     </table>
 </div>
-@endsection
+
